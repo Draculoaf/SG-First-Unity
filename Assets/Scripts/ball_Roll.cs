@@ -15,6 +15,11 @@ public class ball_Roll : MonoBehaviour
     
     void Update()
     {
+        Roll();
+    }
+
+    public void Roll()
+    {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
