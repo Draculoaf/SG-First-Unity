@@ -25,7 +25,8 @@ public class camera_Behaviour : MonoBehaviour
 
     public void Update()
     {
-        //CameraRotate(); 
+        //CameraRotate();
+        gameObject.transform.LookAt(player);
     }
 
     public void CameraFollow()
