@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ball_Behaviour : MonoBehaviour
 {
+    //Variables
     private Rigidbody rb;
     [SerializeField] private float moveForce, jumpForce;
     [SerializeField] private bool isGrounded = true, canJump = false;
@@ -14,15 +15,19 @@ public class ball_Behaviour : MonoBehaviour
     private mannager_Collectables collectablesScript;
     public AudioSource deathAudio, winAudio;
 
-
+    
+    
+    
     void Start()
     {
+       
         rb = gameObject.GetComponent<Rigidbody>();
         jump = new Vector3(0.0f, jumpForce, 0.0f);
         collectablesScript = GetComponent<mannager_Collectables>();      
     }
 
-
+    
+    
     void Update()
     {
         Roll();
