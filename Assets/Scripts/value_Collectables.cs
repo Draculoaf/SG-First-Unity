@@ -6,11 +6,7 @@ using UnityEngine.UI;
 using Newtonsoft.Json;
 using System.Linq;
 
-[Serializable]
-public class collectables
-{
-    [JsonProperty("collectables_value")] public int collect = 0;
-}
+
 
 public class CollectablesManager : MonoBehaviour
 {
@@ -64,4 +60,10 @@ public class CollectablesManager : MonoBehaviour
         string jsonData = System.IO.File.ReadAllText(dataPath);
         return JsonConvert.DeserializeObject<collectables>(jsonData);
     }
+}
+
+[Serializable]
+public class collectables
+{
+    [JsonProperty("collectables_value")] public int collect = 0;
 }

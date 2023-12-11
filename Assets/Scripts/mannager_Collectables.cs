@@ -12,7 +12,6 @@ public class mannager_Collectables : MonoBehaviour
     public AudioSource collectablesAudioSource;
     public Image pill_1, pill_2;
 
-    // Start is called before the first frame update
     void Start()
     {
         //collectablesTXT.text = "0/2";
@@ -24,12 +23,6 @@ public class mannager_Collectables : MonoBehaviour
         Color b = pill_2.color;
         b.a = .2f;
         pill_2.color = b;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //collectablesTXT.text = collect.ToString() + "/2";
     }
 
     private void OnTriggerEnter(Collider other)

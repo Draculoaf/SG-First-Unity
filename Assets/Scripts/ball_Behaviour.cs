@@ -9,7 +9,7 @@ public class ball_Behaviour : MonoBehaviour
     //Variables
     private Rigidbody rb;
     [SerializeField] private float moveForce, jumpForce;
-    [SerializeField] private bool isGrounded = true, canJump = false;
+    [SerializeField] public bool isGrounded = true, canJump = false;
     private Vector3 jump;
     [SerializeField] public GameObject deathPanel, winPanel, spacePanel;
     private mannager_Collectables collectablesScript;
